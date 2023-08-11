@@ -1,7 +1,7 @@
 const request = require('request');
 
 const args = process.argv.slice(2);
-const catBreed = "siberian";
+const catBreed = args[0];
 
 const apiUrl = `https://api.thecatapi.com/v1/breeds/search?q=${catBreed}`;
 
